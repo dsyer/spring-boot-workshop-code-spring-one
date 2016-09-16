@@ -12,7 +12,7 @@ import java.security.Principal;
 
 @RestController
 @EnableAuthorizationServer
-@EnableResourceServer
+//@EnableResourceServer
 @SpringBootApplication
 public class OAuthAuthorizationServerApplication {
 
@@ -20,9 +20,9 @@ public class OAuthAuthorizationServerApplication {
 		SpringApplication.run(OAuthAuthorizationServerApplication.class, args);
 	}
 
-    @RequestMapping("/user")
-    public Principal user(Principal user) {
-        return user;
-    }
+//    @RequestMapping("/user")
+//    public Principal user(Principal user) {
+//        return user;
+//    }
 
 }
